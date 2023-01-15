@@ -3,82 +3,123 @@
     {
       "tag": "greeting",
       "patterns": [
-        "Hi",
-        "Hey",
-        "How are you",
-        "Is anyone there?",
-        "Hello",
-        "Good day"
+        "Hi","Hi there","Good morning","Good afternoon",
+        "Hey","Good evening","It’s nice to meet you",
+        "How are you","It’s a pleasure to meet you","Yo!",
+        "Is anyone there?","How’s it going?"," Howdy!",
+        "Hello","Sup?","G’day!","Morning!","Pleased to meet you",
+        "Good day","Good to see you","Nice to see you",
+        "Hi, How is it going?","Long time no see",
+        "wassup","what's up","Nice to meet you."
       ],
       "responses": [
-        "Hey :-)",
+        "Hey :-)   thanks for visiting. How can I help?",
         "Hello, thanks for visiting",
         "Hi there, what can I do for you?",
-        "Hi there, how can I help?"
+        "Hi there, how can I help?",
+        "Greetings! how can I help?",
+        "The sky's up but I'm fine thanks. What can I do for you?",
+        "Hi, nice to meet you. How can I help?",
+        "Nice to meet you. What can I do for you?"
       ]
     },
     {
       "tag": "goodbye",
-      "patterns": ["Bye", "See you later", "Goodbye"],
+      "patterns": ["Bye", "See you later", "Goodbye","Bye bye!",
+        "Talk to you later","See you soon","I must be going",
+        "I’ve got to get going","I’m off","I look forward to our next meeting",
+        "Take care","It was nice seeing you","Catch you later","later",
+        "Peace out","Peace","I’m out of here","I’m out","I gotta take off",
+        "I gotta jet","tata","I am off"
+      ],
       "responses": [
         "See you later, thanks for visiting",
         "Have a nice day",
-        "Bye! Come back again soon."
+        "Bye! Come back again soon.","Bye Bye!","Bye! See you soon",
+        "Take care!"
       ]
     },
     {
       "tag": "thanks",
-      "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!"],
-      "responses": ["Happy to help!", "Any time!", "My pleasure"]
+      "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!",
+        "Thank you so much.","Thank you very much.","I appreciate your consideration.",
+        "I appreciate your help.","I appreciate your time.","My sincere appreciation.",
+        "My sincere gratitude.","My thanks and appreciation.","You are the best.",
+        "You have been most helpful.","You are always so helpful.","okay thanks","okay thank you","okay","ok","got it"
+    
+    ],
+      "responses": ["Happy to help!", "Any time!", "My pleasure",
+      "It would be my pleasure.","You got it.","Not a problem.",
+      "At your service.","I'd be more than willing to assist.",
+      "I'd love to help."
+    ]
     },
     {
-      "tag": "items",
+      "tag": "joke",
       "patterns": [
-        "Which items do you have?",
-        "What kinds of items are there?",
-        "What do you sell?"
+        "tell me joke","share a joke","share joke with me","tell me a joke",
+        "tell me pun","give me a joke","make me laugh","give me laughing gas","one more joke",
+        "one more","I want to listen one more","I want to read more jokes",
+        "tell me more","once more","more one liner","joke please","joke","laughing joke",
+        "give me more funny joke","yes joke","okay tell me joke then","okay I want to hear a joke","ok joke please","can you tell me joke"
       ],
       "responses": [
-        "We sell coffee and tea",
-        "We have coffee and tea"
+        ""
       ]
     },
     {
-      "tag": "payments",
-      "patterns": [
-        "Do you take credit cards?",
-        "Do you accept Mastercard?",
-        "Can I pay with Paypal?",
-        "Are you cash only?"
+      "tag":"purpose",
+      "patterns":["what can you do","How can you help me","what service do you provide","your service","tell me more about your service",
+      "I need your service","I need your help","what is your service","which services do you provide","I want to know your servide","what do you do","anything else"
+      ],
+      "responses":["I can tell you joke","I am here to cheer you up with funny jokes","I tell jokes."]
+    },
+
+    {
+      "tag": "bot_name",
+      "patterns": ["what is your name","Who are you","may I know your name","what are you","your name",
+      "how you are called","whas your name","what do you call","what is the name","what's your first name",
+      "you got a name","how do you call yourself","how you call","me your name","what is jajo","who is jajo","are you jajo?",
+      "what are you calling yourself","what did you say your name","tell me your name","more information about you"
       ],
       "responses": [
-        "We accept VISA, Mastercard and Paypal",
-        "We accept most major credit cards, and Paypal"
+        "I am Jajo, pun loving chatbot. I can tell you a joke","Well I am Jajo, fun chatbot. I can tell you a joke","My name is Jajo. I can tell you a joke",
+        "Jajo!! That's my name. I can tell you jokes"
       ]
     },
     {
-      "tag": "delivery",
-      "patterns": [
-        "How long does delivery take?",
-        "How long does shipping take?",
-        "When do I get my delivery?"
+      "tag": "owner",
+      "patterns": ["who made you","who is your maker","who is your owner","tell me maker name","who is Shubham","your owner name","your creators name","your makers name",
+      "name of your maker","name of your owner","owner name","maker name","who is your creator","creators name","what is your creators name","you made by whom","you created by whom",
+      "Who is Shubham","tell me more about Shubham","Shubham"
       ],
-      "responses": [
-        "Delivery takes 2-4 days",
-        "Shipping takes 2-4 days"
+      "responses": ["Shubham made me. You can find him on linked",
+      "I am made by Shubham. You can find him on LinkedIn",
+      "My creator is Shubham. You can connect him on LinkedIn"
       ]
     },
     {
-      "tag": "funny",
-      "patterns": [
-        "Tell me a joke!",
-        "Tell me something funny!",
-        "Do you know a joke?"
+      "tag":"Joke_resoponse",
+      "patterns":[
+        "that was a good one","good one","it was funny","Ha ha","so funny","awesome","too good","nice","that was funny","I am laughing right now"
       ],
-      "responses": [
-        "Why did the hipster burn his mouth? He drank the coffee before it was cool.",
-        "What did the buffalo say when his son left for college? Bison."
+      "responses":[
+        "I am glad you liked it!","Awesome!" ,"I know! right :)","I am happy you liked it"
       ]
+    },
+    {
+      "tag":"unknown_message",
+      "patterns":["kjgsdkfuhksd","sbjkjbckjs","sakhlugdldb","sbjks skuahf khskfg ckgukusag kgsfkjb cgkajsdd","hjvsdjfhf"
+
+      ],
+      "responses":["Ha! Let me learn stone age language!... Oops still can't understand your words"]
+    },
+    {
+      "tag":"unknown_number",
+      "patterns":["123456789","1","2","3","4","5","6","7","8","9","0","11","22","33","654","123","01234","45679"
+
+      ],
+      "responses":["Well I am not good with maths!! :("]
     }
   ]
 }

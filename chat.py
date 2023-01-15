@@ -1,6 +1,6 @@
 import random
 import json
-
+import numpy as np
 import torch
 
 from model import NeuralNet
@@ -10,6 +10,8 @@ device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
 with open('intents.json', 'r') as json_data:
     intents = json.load(json_data)
+with open('jokes.json', 'r',encoding="utf8") as json_jokes:
+    jokes = json.load(json_jokes)
 
 FILE = "data.pth"
 data = torch.load(FILE)
@@ -43,9 +45,15 @@ def get_response(msg):
     if prob.item() > 0.75:
         for intent in intents['intents']:
             if tag == intent["tag"]:
-                return random.choice(intent['responses'])
+                if tag == "joke":
+                    id = random.choice(np.arange(1,39,1))
+                    for i in jokes['Jokes']:
+                        if i['id']==id:               
+                            return i['joke']
+                else:
+                    return random.choice(intent['responses'])
     
-    return "I do not understand..."
+    return "So Sorry! I do not understand..."
 
 
 if __name__ == "__main__":
